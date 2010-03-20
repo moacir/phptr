@@ -1,11 +1,11 @@
 Usage:
-php phptr.php <lang-from>_<lang-to> <text>
+phptr <lang-from>_<lang-to> <text>
 
 Optional Options:
     -l, --langs             List the supported languages
     -h, --help              Display this help
 
 Example: 
-$ php phptr.php en_pt "Hello World"
+$ phptr en_pt "Hello World"
 Translating from ENGLISH to PORTUGUESE:
 Olá Mundo

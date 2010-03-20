@@ -1,3 +1,4 @@
+#!@php_bin@
 <?php
 /*
  * Copyright (c) 2010 Moacir de Oliveira <moacirdeoliveira.eng@gmail.com>
@@ -173,8 +174,8 @@ function usage() {
     echo <<<HELP
 A command line tool to communicate with the Google Translator API
 
-Usage: php phptr.php <lang-from>_<lang-to> <text>
-Example: php phptr.php en_pt "Hello World"
+Usage: phptr <lang-from>_<lang-to> <text>
+Example: phptr en_pt "Hello World"
 
     -l, --langs             List the supported languages
     -h, --help              Display this help
