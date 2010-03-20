@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.0"
+  version="2.0"
+  xmlns="http://pear.php.net/dtd/package-2.0"
+  xmlns:tasks="http://pear.php.net/dtd/tasks-1.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+    http://pear.php.net/dtd/tasks-1.0.xsd
+    http://pear.php.net/dtd/package-2.0
+    http://pear.php.net/dtd/package-2.0.xsd">
+ <name>PHPTr</name>
+ <channel>pear.php.net</channel>
+ <summary>A command line tool to communicate with the Google Translator API.</summary>
+ <description>
+   A command line tool to communicate with the Google Translator API.
+ </description>
+ <lead>
+  <name>Moacir de Oliveira</name>
+  <user>moacir</user>
+  <email>moacirdeoliveira.eng@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-03-20</date>
+ <time>18:00:00</time>
+ <version>
+  <release>0.0.1</release>
+  <api>0.0.1</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/mit-license.php">MIT</license>
+ <notes>-</notes>
+ <contents>
+  <dir name="/">
+   <file name="LICENSE" role="doc" />
+   <file name="README" role="doc" />
+   <file name="phptr.php" role="script">
+    <tasks:replace from="@php_bin@" to="php_bin" type="pear-config"/>
+   </file>
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.0.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease>
+  <filelist>
+   <install name="phptr.php" as="phptr"/>
+  </filelist>
+ </phprelease>
+</package>
