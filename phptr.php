@@ -178,6 +178,7 @@ Usage: phptr <lang-from>_<lang-to> <text>
 Example: phptr en_pt "Hello World"
 
     -l, --langs             List the supported languages
+    -v, --version           Display the version information
     -h, --help              Display this help
 
 Written by Moacir de Oliveira <moacirdeoliveira.eng@gmail.com>
@@ -185,10 +186,23 @@ Written by Moacir de Oliveira <moacirdeoliveira.eng@gmail.com>
 HELP;
 }
 
+function version_info() {
+    echo <<<VERSION
+PHPTr Version: @package_version@
+Written by Moacir de Oliveira <moacirdeoliveira.eng@gmail.com>
+
+VERSION;
+}
+
 $api = new GoogleTranslatorApi;
 
 if (in_array('-h', $argv) || in_array('--help', $argv)) {
     usage();
+    exit(0);
+}
+
+if (in_array('-v', $argv) || in_array('--version', $argv)) {
+    version_info();
     exit(0);
 }
 

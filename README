@@ -3,6 +3,7 @@ phptr <lang-from>_<lang-to> <text>
 
 Optional Options:
     -l, --langs             List the supported languages
+    -v, --version           Display the version information
     -h, --help              Display this help
 
 Example: 
