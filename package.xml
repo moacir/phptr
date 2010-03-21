@@ -9,7 +9,7 @@
     http://pear.php.net/dtd/package-2.0
     http://pear.php.net/dtd/package-2.0.xsd">
  <name>PHPTr</name>
- <channel>pear.php.net</channel>
+ <channel>pear.moacirdeoliveira.com</channel>
  <summary>A command line tool to communicate with the Google Translator API.</summary>
  <description>
    A command line tool to communicate with the Google Translator API.
